@@ -1,4 +1,3 @@
-
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 
@@ -10,15 +9,19 @@ type props = {
 export default function Home({ title, data }: props) {
   return (
     <>
-      <Header/>
+      <Header />
       <main className={styles.main}>
-        {data.map((e: any) => (
-          <a href={`/events/${e.id}`} key={e.id}>
-            <img src={`${e.image}`} width={"50%"}/>
-            <h2>{e.title}</h2>
-            <p className={styles.description}>{e.description}</p>
-          </a>
-        ))}
+        <h1>Home</h1>
+
+        <div className={styles.inDiv}>
+          {data.map((e: any) => (
+            <a href={`/events/${e.id}`} key={e.id}>
+              <img src={`${e.image}`} width={"20%"} />
+              <h2>{e.title}</h2>
+              <p className={styles.description}>{e.description}</p>
+            </a>
+          ))}
+        </div>
       </main>
     </>
   );
