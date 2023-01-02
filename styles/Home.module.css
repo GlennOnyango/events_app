@@ -1,10 +1,29 @@
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+}
+
+.navBar{
+  background-color:wheat;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navBar h3{
+  color: black;
+}
+
+.navBar div a{
+  color: black;
+  margin-right: 1rem;
 }
 
 .description {
